@@ -1,0 +1,12 @@
+<p>student works!</p>
+<span>{{ketqua}}</span>
+<button (click)="cong()">cong</button>
+<br>
+<button (click)="tru()" class="btn btn-primary">tru</button>
+
+<img (mouseover)="hinh2($event)"
+(mouseout)="hinh1($event)"
+ src="{{hinh}}" alt="rong" [style.width.px]="sizeImage" [style.height.px]="sizeImage" >
+
+
+ <input type="number" [value]="sizeImage" (change)="onChange($event.target.value)">
